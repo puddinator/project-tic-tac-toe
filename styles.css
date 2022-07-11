@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "tomatoes";
+    src: url("tomatoes.ttf");
+}
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+header {
+    font-family: 'tomatoes';
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    background-color: rgb(241, 234, 234);
+    padding: 1em;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(241, 234, 234);
+    padding: 0.2em;
+}
+
+.body-container {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.message-container {
+    margin-bottom: 10px;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+.game-container {
+    width: 50vh;
+    height: 50vh;
+    background-color: rgb(160, 151, 151);
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.cell {
+    background-color: rgb(233, 223, 223);
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    margin-top: 10px;
+    padding: 0.5rem 1rem;
+    font-size: large;
+    border: 1px solid grey;
+    background-color: rgb(233, 223, 223);
+    border-radius: 10px;
+}
+
+button:active {
+    background-color: rgb(143, 134, 134);
+}
